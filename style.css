@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Slackey&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lexend Deca", serif;
+    position: relative;
+}
+.section-title{
+    padding: 1.2rem 0;
+    font-size: 3.5rem;
+    color:#543A14;
+    line-height: 1.3;
+    text-align: center;
+}
+.ff-slackey {
+    font-family: "Slackey", serif;
+}
+textarea{
+    resize: none;
+}
+ul{
+    list-style: none;
+}
+/*header start*/
+header{
+    height: 100vh;;
+}
+.navbar-brand span{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-item a{
+    transition: all .4s;
+    border-bottom: 2px solid transparent;
+    margin: 0 .5rem;
+}
+.navbar .navbar-nav .nav-item a:hover{  
+    border-bottom: 2px solid #dc3545;
+    color: #dc3545;
+}
+.navbar .navbar-nav .nav-item a.active{
+    border-bottom: 2px solid #dc3545;
+    color: #dc3545;
+}
+/* home-section-start */
+    .home-img{
+        width: 520px;
+        height: 520px;
+    }
+    .home-section{
+        height: 100vh;
+    }
+    .home-section .col-md-6 {
+        margin: auto;
+    }
+    .home-section-title{
+        font-size: 6rem;
+        font-weight: bold;
+        font-family: "Slackey", serif;
+    }
+   
+/* home-section-end */
+/*header end*/
+/* about-start */
+.about-title{
+    padding: 1.2rem 0;
+    font-size: 3.5rem;
+    color:#000;
+    line-height: 1.3;
+    text-align: center;
+}
+/* about-end */
+
+/* banner-section-start */
+    #banner-section{
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .banner-section-1{
+        background:
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+        url('img/area-1.jpg');
+        height: 50vh;
+    }
+    .banner-section-2{
+        background:
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+        url('img/area-2.jpg');
+        height: 50vh;
+    }
+    .footer-section{
+        background:
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+        url('img/area-2.jpg');
+        height: 50vh;
+    }
+    #banner-section h3{
+        margin-bottom: 1.2rem;
+        font-size: 2rem;
+    }
+    #banner-section p{
+        font-size: .9rem;
+    }
+
+/* banner-section-end */
+
+/* menu-start */
+    #menu .card{
+        transition: all .2s;
+    }
+    #menu .card:hover{
+        transform: translateY(-5px);
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+/* form start */
+.contact-form{
+    width: 60%;
+    margin: auto;
+}
+
+/* form end */
+
+
+/* menu-end */
+
+/* footer start */
+footer a{
+    color: #fff;
+    transition: all .5s;
+}
+footer a:hover{
+    color: #dc3545;
+}
+footer li{
+    padding: .8rem 1.5rem;
+}
+/* footer end */
+
+.to-up{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 3rem;
+}
+/* mobile responsive start */
+
+/* @media (max-width: 576px) {  } */
+
+@media (max-width:767px) { 
+    .section-title{
+        font-size: 2rem;
+    }
+    .about-title{
+        font-size: 1.5rem;
+    }
+    .home-section .container{
+        height: 100%;
+    }
+    .home-section .row {
+        height: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .home-section .row .col-12{
+        height: 100%;
+        margin-top: 4rem;
+    }
+    .home-img{
+        width: 350px;
+        height: 350px;
+    }
+    .home-section{
+        height: 100vh;
+        margin: 2rem 0;
+
+    }
+    .home-section .col-md-6 {
+        margin: auto;
+        padding-top: 3rem;
+    }
+    .home-section-title{
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-family: "Slackey", serif;
+    }
+    #contact .contact-form{
+        width: 100%;
+    }
+    #about{
+        text-align: center;
+    }
+    #about .btn, .contact-form .btn{
+        width: 100% !important;
+    }
+    #about p{
+        width: 100% !important;
+    }
+    #about, #menu {
+        padding: 1rem;
+    }
+    .navbar-collapse{
+        background-color:#333;
+    }
+    .navbar-collapse .navbar-nav li a{
+        color: #fff;
+    }
+ }
+
+
+@media (min-width: 768px) and (max-width:991px) { 
+   
+    .section-title{
+        font-size: 2.5rem;
+    }
+    .about-title{
+        font-size: 2rem;
+    }
+    .home-section .row {
+        row-gap: 30px !important;
+        align-content: center;
+        justify-content: center;
+    }
+    .home-img{
+        width: 350px;
+        height: 350px;
+    }
+    .home-section{
+        height: 100vh;
+        margin: 2rem 0;
+
+    }
+    .home-section .col-md-6 {
+        margin: auto;
+        padding-top: 3rem;
+    }
+    .home-section-title{
+        font-size: 4rem;
+        font-weight: bold;
+        font-family: "Slackey", serif;
+    }
+    #contact .contact-form{
+        width: 100%;
+    }
+}
+
+
+ 
+
+
+/* mobile responsive end*/
+
